@@ -1,38 +1,58 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.divTable{
+  display: table;
+  max-width: 2rem;
+  float: right;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+}
+divTableRow {
+  display: table-row;
+}
+divTableHeading{
+  background-color: #eee;
+  display: table-header-group;
+  font-weight: bold;
+}
+divTableCell,
+.divTableHead{
+  border: 1px solid #999;
+  display: table-cell;
+  padding: 3px 10px;
+}
+.divTableFoot{
+  background-color: #eee;
+  display: table-footer-group;
+  font-weight: bold;
+
+}
+.divTableBody{
+  display: table-row-group;
+}
+.divTableCell:nth-child(1n){
+  background-color: gainsboro;
+}
+.container{
+  display:flex;
+  opacity: .9;
+  background-color: #99aaab;
+}
+img {
+  height: 16em;
+
+}
+input{
+  box-sizing: border-box;
+  font-size: 2rem;
+  padding: 1rem;
+  display: block;
+  margin: 2rem auto;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  background-image: url("http://images6.fanpop.com/image/photos/40000000/Pokemon-Background-Designs40-random-40057516-1920-1080.jpg");
+  background-size: 150%;
 }
